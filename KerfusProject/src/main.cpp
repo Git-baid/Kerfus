@@ -78,7 +78,6 @@ void setup() {
     matrix = new MatrixPanel_I2S_DMA(mxconfig);
     if (!matrix->begin()) {
         Serial.println("Matrix initialization failed!");
-        return;
     }
 
     // Start communication with DFPlayer Mini
